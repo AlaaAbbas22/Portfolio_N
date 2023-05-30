@@ -1,29 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import bg from './assets/bg.mp4'
+import Nav from './components/nav'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isopen, setisopen] = useState(false)
 
   return (
     <>
-      <video autoPlay muted loop id="bg">
+      
+      <video autoPlay muted loop id="bg" className='filter'>
         <source src={bg} type="video/mp4"/>
       </video>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Nav/>
+      <h1 className='writer writer-text text-white my-60'>Welcome to <span className='text-blue-400'>Alaa</span></h1>
     </>
   )
 }
