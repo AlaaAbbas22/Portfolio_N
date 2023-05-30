@@ -10,6 +10,39 @@
   object-fit: cover;
   z-index: -1;
 }
+
+.writer {
+  font-family: Courier, monospace;
+  display: inline-block;
+  }
+  .writer-text {
+      display: inline-block;
+      overflow: hidden;
+      letter-spacing: 2px;
+      animation: typing 1s steps(40, end), blink 1s step-end infinite;
+      white-space: nowrap;
+      font-weight: 700;
+      border-right: 4px solid orange;
+      box-sizing: border-box;
+  }
+
+  @keyframes typing {
+      from { 
+          width: 0% 
+      }
+      to { 
+          width: 100% 
+      }
+  }
+
+  @keyframes blink {
+      from, to { 
+          border-color: transparent 
+      }
+      50% { 
+          border-color: orange; 
+      }
+  }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
