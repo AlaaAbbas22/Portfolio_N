@@ -1,5 +1,7 @@
 Change crusor
-Remove navbar
-video background
+
 Things appearing on scrolling
 loading page
+
+Remove navbar
+video background
