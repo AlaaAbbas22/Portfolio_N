@@ -24,7 +24,6 @@
       animation: typing 1s steps(40, end), blink 1s step-end infinite;
       white-space: nowrap;
       font-weight: 700;
-      border-right: 4px solid orange;
       box-sizing: border-box;
   }
 
@@ -49,11 +48,11 @@
   @keyframes inAnimation {
     0% {
       opacity: 0;
-      visibility: hidden;
+      transform: translateY(-20%);
     }
     100% {
       opacity: 1;
-      visibility: visible;
+      transform: translateY(0);
     }
   }
   
@@ -63,7 +62,7 @@
     }
     100% {
       opacity: 0;
-      visibility: hidden;
+      transform: translateY(-20%);
     }
   }
   
