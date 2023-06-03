@@ -11,7 +11,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    
     element: (
       <>
         <video autoPlay muted loop id="bg" className='filter'>
@@ -30,10 +30,12 @@ const router = createBrowserRouter([
         </h1>
       </div>
       <div className="min-h-screen ">
-        <div className='ring-2 rounded-xl bg-slate-300'>
-        Hello, there! 
-        <p>
-        I am Alaa, but you can call me LOL.
+        <div className='ring-2 rounded-xl bg-slate-300 font-mono tracking-widest text-xl leading-loose'>
+         
+        <p className='mx-80 text-justify py-4 mt-40'>
+        <center>Hello, there! </center>
+        I am Alaa, but you can call me LOL. I am a Computer Science major at Minerva University, headquartered in San Francisco, CA. I don't know if
+        I am considered a software engineer, but I hope so. My best friend is Stackoverflow.
         </p> 
         </div>
       </div>
