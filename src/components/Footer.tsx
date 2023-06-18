@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-slate-950 to-slate-700 rounded-lg shadow m-4">
+    <footer className="bg-gradient-to-r from-slate-950 to-slate-800 rounded-lg shadow m-4 ring-1 ring-cyan-900">
     <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
       <span className="text-sm text-gray-200 sm:text-center ">© 2023 <Link to="/" className="hover:underline text-white hover:text-white">Alaa Abbas™</Link>. All Rights Reserved To My Family Who Gave Me My Name.
     </span>
