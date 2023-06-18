@@ -1,5 +1,7 @@
 import './App.css'
 import bg from './assets/bg.mp4'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Work from './components/Work';
 import Nav from './components/nav'
@@ -21,6 +23,7 @@ const router = createBrowserRouter([
         </video>
         <Nav/>
         <Outlet/>
+        <Footer/>
       </>
     ),
     children:
@@ -31,7 +34,11 @@ const router = createBrowserRouter([
   {
     path: "/work",
     element: <Work/>
-  }]
+  },
+{
+  path: "/contact",
+  element: <Contact/>
+}]
   },
 ]);
 
