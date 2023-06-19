@@ -11,6 +11,7 @@ import {
   RouterProvider,
   Outlet
 } from "react-router-dom";
+import ScrollToTop from './components/Scroll';
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     
     element: (
       <>
+        <ScrollToTop />
         <video autoPlay muted loop id="bg" className='filter'>
           <source src={bg} type="video/mp4"/>
         </video>

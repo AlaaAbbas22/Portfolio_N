@@ -1,7 +1,16 @@
-Change crusor
-scroll down bounce animation
-Things appearing on scrolling
 loading page
+Change the title of the tab
+Things appearing on scrolling
 
+
+professional experience
+
+
+
+
+font sizes change
+go to top of page when links pushed
 Remove navbar
 video background
+Change crusor
+scroll down bounce animation

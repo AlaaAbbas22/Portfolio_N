@@ -6,7 +6,7 @@ const Nav = () => {
     const [mob, setmob] = useState(false)
     const [isMounted, setIsMounted] = useState(false);
 
-    const mountedStyle = { animation: "inAnimation 450ms ease-in", background: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4))"};
+    const mountedStyle = { animation: "inAnimation 450ms ease-in", background: "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4))"};
   const unmountedStyle = {
     animation: "outAnimation 470ms ease-out",
     animationFillMode: "forwards",
@@ -23,14 +23,14 @@ const Nav = () => {
         </button></div>
             {mob&&<div id="Bar" className="items-center justify-between" >
       <ul id= "Bar" style={isMounted ? mountedStyle : unmountedStyle} onAnimationEnd={() => { if (!isMounted) setmob(false) }} className="flex flex-col font-medium border border-gray-100 rounded-lg  fixed right-10" >
-        <li onClick={()=>{setmob(!mob)}}>
-          <Link to="/" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 ">Home</Link>
+        <li onClick={()=>{setIsMounted(!isMounted)}}>
+          <Link to="/" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 text-blue-200 hover:text-cyan-950">Home</Link>
         </li>
-        <li onClick={()=>{setmob(!mob)}}>
-          <Link to="/work" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 ">Work</Link>
+        <li onClick={()=>{setIsMounted(!isMounted)}}>
+          <Link to="/work" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 text-blue-200 hover:text-cyan-950">Work</Link>
         </li>
-        <li onClick={()=>{setmob(!mob)}}>
-          <Link to="/contact" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 ">Contact</Link>
+        <li onClick={()=>{setIsMounted(!isMounted)}}>
+          <Link to="/contact" className="block py-2 pl-3 pr-4 rounded hover:bg-gray-100 text-blue-200 hover:text-cyan-950">Contact</Link>
         </li>
       </ul>
     </div>}

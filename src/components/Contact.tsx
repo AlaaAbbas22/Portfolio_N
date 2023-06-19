@@ -6,7 +6,7 @@ import inn from "../assets/in.png"
 const Contact = () => {
   return (
     <>
-      <h2  className='bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/4 mx-auto p-5 rounded-xl text-3xl my-2'>Come and say hi!</h2>
+      <h2  className='bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/4 mx-auto p-5 rounded-xl text-3xl my-2'>Say hi!</h2>
     <div className="hover:skew-y-0 mx-auto my-7 sm:my-10 sm:w-1/2  transition ease-in-out font-serif flex justify-center text-white p-4 sm:p-10 bg-gradient-to-r from-cyan-900 to-blue-800 rounded-xl shadow-lg ">
         <div className="tracking-wide leading-loose">        
           <p className="text-center font-bold text-lg sm:text-2xl">Email</p><p className="text-center text-lg sm:text-2xl "><a href="mailto:alaa@uni.minerva.edu" className="text-white hover:underline hover:text-white">alaa@uni.minerva.edu</a></p><br/>

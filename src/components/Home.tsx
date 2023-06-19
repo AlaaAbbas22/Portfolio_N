@@ -3,14 +3,14 @@ import home from "../assets/home2.png"
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-  const first = useRef(null)
+  const first = useRef<null | HTMLDivElement>(null)
   return (
     <main className="relative -top-20">
       <div className="min-h-screen  pt-40">
         <img src={home} className='mx-auto'></img>
         <h1 className='writer writer-text text-white self-center mx-auto'>Welcome to <span className='text-blue-400'>Alaa</span>
         </h1>
-        <div><button className='mx-auto animate-bounce mt-20 px-4 py-3 shadow-2xl rounded-full' onClick={()=>{first.current.scrollIntoView({ behavior: "smooth"})}}>&#8595;</button></div>
+        <div><button className='mx-auto animate-bounce mt-20 px-4 py-3 shadow-2xl rounded-full' onClick={()=>{first.current?.scrollIntoView({ behavior: "smooth"})}}>&#8595;</button></div>
       </div>
       <div ref={first} className="min-h-screen">
         <div className=' font-mono  text-xl mx-auto pt-40'>
