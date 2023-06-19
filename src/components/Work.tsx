@@ -13,15 +13,15 @@ const Work = () => {
     <main className="relative -top-20">
       <div className="min-h-screen flex">
       <h1 className='m-auto grid sm:grid-cols-3 sm:text-xl text-sm'>
-        <button className='m-1 px-14 hover:animate-pulse' onClick={()=>{ref.current?.scrollIntoView({behavior: 'smooth'})}}>El Statistician</button>
-        <button className='m-1 px-14 hover:animate-pulse' onClick={()=>{welly.current?.scrollIntoView({behavior: 'smooth'})}}>Wellytics</button>
-        <button className='m-1 px-14 hover:animate-pulse' onClick={()=>{port.current?.scrollIntoView({behavior: 'smooth'})}}>Personal website</button>
+        <button className='m-1 px-14 hover:animate-pulse bg-slate-200 text-black' onClick={()=>{ref.current?.scrollIntoView({behavior: 'smooth'})}}>El Statistician</button>
+        <button className='m-1 px-14 hover:animate-pulse bg-slate-200 text-black' onClick={()=>{welly.current?.scrollIntoView({behavior: 'smooth'})}}>Wellytics</button>
+        <button className='m-1 px-14 hover:animate-pulse bg-slate-200 text-black' onClick={()=>{port.current?.scrollIntoView({behavior: 'smooth'})}}>Personal website</button>
         <p></p>
-        <button className='m-1 px-14 hover:animate-pulse' onClick={()=>{rela.current?.scrollIntoView({behavior: 'smooth'})}}>Relaxify</button>
+        <button className='m-1 px-14 hover:animate-pulse bg-slate-200 text-black' onClick={()=>{rela.current?.scrollIntoView({behavior: 'smooth'})}}>Relaxify</button>
         </h1>
       </div>
       <div ref={ref} className="min-h-screen sm:mx-60">
-      <h2  className='bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/4 mx-auto p-5 rounded-xl text-3xl my-2'>El Statistician <span className='text-lg'><br/>(May 2023)</span></h2>
+      <h2  className='text-black bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/4 mx-auto p-5 rounded-xl text-3xl my-2'>El Statistician <span className='text-lg'><br/>(May 2023)</span></h2>
         <div className='bg-gradient-to-r from-cyan-900 to-blue-800 p-3 sm:p-10 rounded-2xl'>
           
           <img src={stats} className=' rounded-[30px] shadow-2xl p-1 my-3'></img>
@@ -33,7 +33,7 @@ const Work = () => {
       </div>
       
       <div ref={welly} className="min-h-screen sm:mx-60">
-      <h2  className='bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/3 mx-auto p-5 rounded-xl text-3xl my-2'>Wellytics <span className='text-lg'><br/>(September 2022-April 2023)</span></h2>
+      <h2  className='text-black bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/3 mx-auto p-5 rounded-xl text-3xl my-2'>Wellytics <span className='text-lg'><br/>(September 2022-April 2023)</span></h2>
         <div className='bg-gradient-to-r from-cyan-900 to-blue-800 p-3 sm:p-10 rounded-2xl'>
           
           <img src={wellytics} className=' rounded-[30px] shadow-2xl p-1 my-3'></img>
@@ -44,7 +44,7 @@ const Work = () => {
         </div>
       </div>
       <div ref={port} className="min-h-screen sm:mx-60">
-      <h2  className='bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/3 mx-auto p-5 rounded-xl text-3xl my-2'>Personal Website <span className='text-lg'><br/>(May-June 2023)</span></h2>
+      <h2  className='text-black bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/3 mx-auto p-5 rounded-xl text-3xl my-2'>Personal Website <span className='text-lg'><br/>(May-June 2023)</span></h2>
         <div className='bg-gradient-to-r from-cyan-900 to-blue-800 p-3 sm:p-10 rounded-2xl'>
           
           <img src={portf} className=' rounded-[30px] shadow-2xl p-1 my-3'></img>
@@ -55,7 +55,7 @@ const Work = () => {
         </div>
       </div>
       <div ref={rela} className="min-h-screen sm:mx-60">
-      <h2  className='bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/3 mx-auto p-5 rounded-xl text-3xl my-2'>Relaxify <span className='text-lg'><br/>(April 2023)</span></h2>
+      <h2  className='text-black bg-gradient-to-r from-slate-300 to-gray-100 sm:w-1/3 mx-auto p-5 rounded-xl text-3xl my-2'>Relaxify <span className='text-lg'><br/>(April 2023)</span></h2>
         <div className='bg-gradient-to-r from-cyan-900 to-blue-800 p-3 sm:p-10 rounded-2xl'>
           
           <img src={Relax} className=' rounded-[30px] shadow-2xl p-1 my-3'></img>
